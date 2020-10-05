@@ -1,13 +1,54 @@
 @import "./variables.scss";
 
-.billboard {
-  min-height: 80vh;
+.detail {
+
+  h1 {
+    margin-bottom: 11px;
+  }
+
+  p {
+    line-height: 21px;
+  }
+
+}
+
+.navigation {
+  border-top: 1px solid $neutro;
+  border-bottom: 1px solid $neutro;
+  margin: 0 24px;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    color: $neutro;
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+  .galery {
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .next {
+    text-align: right;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $neutro;
+  }
+
+  .previous {
+    padding-top: 24px;
+  }
 }
 
 .highlight {
   color: $neutro;
   font-size: 1.3125rem;
   line-height: 1.5;
+  display: none;
 }
 
 .gallery {
@@ -15,6 +56,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 55px 0 90px;
 
   li:not(:last-child) {
     margin: 0 0 1.875rem;
@@ -26,12 +68,42 @@
   }
 }
 
-.link {
-  font-family: $secondaryFont;
-  font-size: 2rem;
+.linkToGalery {
+  font-size: 16px;
+  color: $primary;
+  font-weight: 400;
+  display: block;
+  line-height: 21px;
+  margin-bottom: 42px;
+  svg {margin-left: 9px;}
 }
 
-.label {
-  color: $neutro;
-  font-size: 1rem;
+
+@media (min-width: 48em) {
+  .highlight {
+    display: block;
+  }
+
+  .linkToGalery {display: none;}
+
+  .navigation {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+
+    .next {
+      border-bottom: none;
+      border-left: 1px solid $neutro;
+      padding-right: 30px;
+    }
+
+    .previous {
+      padding-left: 30px;
+    }
+
+    .link {
+      width: 50%;
+      padding: 24px 0;
+    }
+  }
 }
