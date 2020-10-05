@@ -10,6 +10,9 @@
   margin-bottom: 1.25rem;
   padding-bottom: .625rem;
   padding-top: .625rem;
+  a {z-index: 4;}
+
+  .trigger {z-index: 4;}
 }
 
 .nav {
@@ -20,7 +23,24 @@
   &.active {
     opacity: 1;
     z-index: 2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: $light;
+
+    ul {
+      li {
+        margin-bottom: 40px;
+        a {margin: 0;}
+      }
+    }
   }
+
+  .trigger {z-index: 4;}
 }
 
 .link {
@@ -29,9 +49,7 @@
   &:last-child { margin-right: 0; }
 
   &.active,
-  &:hover {
-    color: $primary;
-  }
+  &:hover {color: $primary;}
 }
 
 @media (min-width: 48em) {
@@ -46,5 +64,7 @@
     opacity: 1;
     position: initial;
     z-index: 1;
+
+    ul {display: flex;}
   }
 }
