@@ -18,7 +18,7 @@ const Home = () => {
       <Header />
       <main className="container">
         <section className={styles.billboard}>
-          <img src="/main-image.jpg" />
+          <img src="/main-image.jpg" alt="main img"/>
           <div className={styles.intro}>
             <h1>Hola, soy Jonas Kahnwald, diseñador de interiores</h1>
             <a className="button" href="#about">
@@ -29,7 +29,7 @@ const Home = () => {
         <section id="about" className={styles.about}>
           <div className="grid">
             <div className="column">
-              <img src="/profile.jpg" />
+              <img src="/profile.jpg" alt="profile img"/>
             </div>
             <div className="column text">
               <h2>Sobre mí</h2>

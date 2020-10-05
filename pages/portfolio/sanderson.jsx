@@ -17,7 +17,7 @@ const Portfolio = () => {
       <Header />
       <main>
         <section className={`${styles.billboard} container`}>
-          <img src="/sanderson.jpg" />
+          <img src="/sanderson.jpg"  alt="sanderson img"/>
         </section>
         <section className={`${styles.detail} container container--medium`}>
           <div className="grid">
@@ -77,13 +77,13 @@ const Portfolio = () => {
         <section id="gallery" className="container container--small">
           <ul className={styles.gallery}>
             <li>
-              <img src="/sanderson-chairs.jpg" />
+              <img src="/sanderson-chairs.jpg" alt="sanderson-chairs img"/>
             </li>
             <li>
-              <img src="/sanderson-elevator.jpg" />
+              <img src="/sanderson-elevator.jpg" alt="sanderson-elevator img"/>
             </li>
             <li>
-              <img src="/sanderson-hall.jpg" />
+              <img src="/sanderson-hall.jpg" alt="sanderson-hall img"/>
             </li>
           </ul>
         </section>

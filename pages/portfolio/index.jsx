@@ -18,7 +18,7 @@ const Portfolio = () => {
       <Header />
       <main className="container">
         <section className={styles.billboard}>
-          <img src="/sanderson.jpg" />
+          <img src="/sanderson.jpg" alt="sanderson img"/>
           <div className={styles.intro}>
             <h2>Sanderson</h2>
             <p>
@@ -35,7 +35,7 @@ const Portfolio = () => {
         <section>
           <div className={`${styles.work} grid`}>
             <div className="column">
-              <img src="/s-hotel.jpg" />
+              <img src="/s-hotel.jpg" alt="s-hotel img"/>
             </div>
             <div className="column text">
               <h2>S Hotel</h2>
@@ -49,7 +49,7 @@ const Portfolio = () => {
           </div>
           <div className={`${styles.work} grid`}>
             <div className="column">
-              <img src="/sls.jpg" />
+              <img src="/sls.jpg" alt="sls img"/>
             </div>
             <div className="column text">
               <h2>SLS</h2>
@@ -64,7 +64,7 @@ const Portfolio = () => {
           </div>
           <div className={`${styles.work} grid`}>
             <div className="column">
-              <img src="/s-hotel.jpg" />
+              <img src="/s-hotel.jpg" alt="s-hotel img"/>
             </div>
             <div className="column text">
               <h2>Mama Shelter</h2>
@@ -78,7 +78,7 @@ const Portfolio = () => {
           </div>
           <div className={`${styles.work} grid`}>
             <div className="column">
-              <img src="/xiv.jpg" />
+              <img src="/xiv.jpg" alt="xiv img"/>
             </div>
             <div className="column text">
               <h2>XIV</h2>
