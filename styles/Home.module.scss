@@ -1,0 +1,56 @@
+@import "./variables";
+
+.billboard {
+  position: absolute;
+  left: 0;
+  top: 52px;
+
+  img {
+    width: 100vw;
+    height: auto;
+  }
+
+  .intro {
+    padding: 0 1.25rem;
+  }
+
+}
+
+.about {
+  padding: 400px 0 100px;
+  border-bottom: 1px solid $neutro;
+
+  p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 48em) {
+
+  .billboard {
+    top: 0;
+
+    .intro {
+      position: absolute;
+      width: 560px;
+      left: 100px;
+      top: 550px;
+    }
+
+  }
+
+  .about {
+    padding: 800px 0 100px;
+
+    a {
+      margin-top: 32px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+}

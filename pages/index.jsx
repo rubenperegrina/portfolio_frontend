@@ -26,12 +26,12 @@ const Home = () => {
             </a>
           </div>
         </section>
-        <section id="about">
+        <section id="about" className={styles.about}>
           <div className="grid">
             <div className="column">
               <img src="/profile.jpg" />
             </div>
-            <div className="column">
+            <div className="column text">
               <h2>Sobre mí</h2>
               <p>
                 Mi visión: esa creación, cualquiera que sea la forma que adopte, debe mejorar la
