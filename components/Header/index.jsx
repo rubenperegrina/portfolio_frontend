@@ -35,7 +35,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className={styles.trigger}>
+      <div onClick={toggleMenu} className={styles.trigger}>
         {menu && <Cross className={styles.cross} />}
         {!menu && <Menu className={styles.menu} />}
       </div>
