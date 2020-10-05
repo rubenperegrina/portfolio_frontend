@@ -29,7 +29,9 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a className={styles.link}>Contáctame</a>
+            <Link href="">
+              <a onClick={toggleContactModal} className={styles.link}>Contáctame</a>
+            </Link>
           </li>
         </ul>
       </nav>

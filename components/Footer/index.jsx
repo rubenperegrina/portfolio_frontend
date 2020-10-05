@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import { useAppContext } from '../../contexts/AppContext';
 import Logo from '../../public/logo.svg';
 import Behance from '../../public/behance.svg';
 import Twitter from '../../public/twitter.svg';
@@ -7,6 +8,7 @@ import Linkedin from '../../public/linkedin.svg';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+  const { toggleContactModal } = useAppContext();
   return (
     <footer className={styles.footer}>
       <Link href="/">
@@ -27,8 +29,8 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="/contact">
-              <a className={styles.link}>Contáctame</a>
+            <Link href="">
+              <a onClick={toggleContactModal} className={styles.link}>Contáctame</a>
             </Link>
           </li>
         </ul>
