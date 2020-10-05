@@ -1,3 +1,42 @@
+@import "./variables";
+
 .work {
-  margin: 0 0 5.625rem;
+  margin: 0 0 100px;
 }
+
+.intro {
+  margin-bottom: 60px;
+  background-color: $light;
+  p {
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: 48em) {
+  .work {
+    &:first-child {
+      margin: 160px 0 80px;
+    }
+
+    &:nth-child(even) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    div {
+      width: 48%;
+    }
+  }
+
+  .intro {
+    position: absolute;
+    padding: 36px 40px;
+    margin-bottom: 0;
+    width: 560px;
+    height: 280px;
+    left: 120px;
+    top: 820px;
+  }
+}
+
