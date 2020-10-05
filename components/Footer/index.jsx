@@ -11,31 +11,34 @@ const Footer = () => {
   const { toggleContactModal } = useAppContext();
   return (
     <footer className={styles.footer}>
-      <Link href="/">
-        <a>
-          <Logo className={styles.logo} />
-        </a>
-      </Link>
-      <nav>
-        <ul className={styles.navList}>
-          <li>
-            <Link href="/">
-              <a className={styles.link}>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/portfolio">
-              <a className={styles.link}>Portfolio</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="">
-              <a onClick={toggleContactModal} className={styles.link}>Contáctame</a>
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <nav>
+      <div>
+        <Link href="/">
+          <a>
+            <Logo className={styles.logo} />
+          </a>
+        </Link>
+        <nav>
+          <ul className={styles.navList}>
+            <li>
+              <Link href="/">
+                <a className={styles.link}>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/portfolio">
+                <a className={styles.link}>Portfolio</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="">
+                <a onClick={toggleContactModal} className={styles.link}>Contáctame</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      <nav className={styles.social}>
         <ul>
           <li>
             <Behance />
